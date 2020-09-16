@@ -1,0 +1,9 @@
+Package: com.xsf1re.nokatalkad
+Name: NoKaTalkAD
+Depends: mobilesubstrate
+Version: 1.3
+Architecture: iphoneos-arm
+Description: Remove Ads for KakaoTalk!
+Maintainer: XsF1re
+Author: XsF1re
+Section: Tweaks
