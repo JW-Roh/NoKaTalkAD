@@ -1,4 +1,6 @@
 #import <substrate.h>
+#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 // 채팅 탭 상단에 있는 광고 지우기
 BOOL shouldHookForRemoveChattingTabAD = false;
@@ -9,8 +11,8 @@ BOOL shouldHookForRemoveChattingTabAD = false;
 }
 %end
 
-%hook KakaoProperties
--(BOOL)isIPad {
+%hook UIDevice
++(BOOL)isPad {
 	if(shouldHookForRemoveChattingTabAD) {
 		shouldHookForRemoveChattingTabAD = false;
 		return true;
